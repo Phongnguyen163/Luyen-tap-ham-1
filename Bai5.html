@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    function Tra (x) {
+        let viTri= a.indexOf(x);
+        if (viTri !== -1){
+            return b[viTri];
+        }
+        else {
+            alert("Khong co");
+        }
+    }
+    let c = prompt("Nhap");
+    let result = Tra(c);
+    document.write(result);
+</script>
+</body>
+</html>
